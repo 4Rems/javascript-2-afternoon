@@ -15,8 +15,11 @@
 */
 
 //Code here
-
-
+const me = {
+  name: "Robert",
+  age: 46,
+};
+alert(me.name);
 
 ////////// PROBLEM 2 //////////
 
@@ -26,7 +29,14 @@
 */
 
 //Code here
-
+const favoriteThings = {
+  band: "Mnozil Brass",
+  food: "tamales",
+  person: "wife, Alison",
+  book: "To Kill a Mockingbird",
+  movie: "It's a Wonderful Life",
+  holiday: "Thanksgiving",
+};
 
 
 /*
@@ -34,7 +44,8 @@
 */
 
 //Code here
-
+favoriteThings.car = "Citroen Cactus M";
+favoriteThings.brand = "Hoka";
 
 
 /*
@@ -42,7 +53,8 @@
 */
 
 //Code here
-
+favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book = "Harry Potter";
 
 
 ////////// PROBLEM 3 //////////
@@ -56,7 +68,13 @@
 */
 
 //Code here
+const backPack = {
 
+};
+const item = "firstPocket";
+backPack["firstPocket"] = item;
+backPack.firstPocket = "chapstick";
+backPack.color = "Red";
 
 
 /*
@@ -64,8 +82,7 @@
 */
 
 //Code here
-
-
+alert(backPack);
 
 /*
 You probably noticed that it just alerted [object Object].
@@ -74,7 +91,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+console.log(backPack);
 
 
 ////////// PROBLEM 4 //////////
@@ -97,7 +114,14 @@ var user2 = {
 */
 
 //Code Here
+function updateUser(userName, userEmail) {
+  // Code Here
+  user2.name = userName;
+  user2.email = userEmail;
+  return user2;
+}
 
+var a = updateUser('Tyler S. McGinnis', 'tyler.mcginnis@devmounta.in');
 
 
 
